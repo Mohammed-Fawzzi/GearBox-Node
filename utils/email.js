@@ -43,7 +43,7 @@ module.exports = class Email {
 
   async sendWelcome() {
     const templateWelcome = fs.readFileSync(
-      `${__dirname}/../views/Welcome.html`,
+      `${__dirname}/../Views/Welcome.html`,
       'utf-8'
     );
     const html = templateWelcome
@@ -54,7 +54,7 @@ module.exports = class Email {
 
   async sendPasswordReset() {
     const templatePasswordReset = fs.readFileSync(
-      `${__dirname}/../views/reset.html`,
+      `${__dirname}/../Views/reset.html`,
       'utf-8'
     );
     const html = templatePasswordReset
